@@ -1,9 +1,226 @@
-body{
-    background-color:white;
+/**
+dark blue 292c4b
+light blue 3080ec
+button blue 63a0f1
+button biege ffecec
+panel f6f7fa
+Orange f1743c
+*/
+
+
+
+
+body {
+  background: white;
 }
-.navbar.header-section{background-color:#f2dddd;color:#fff;text-transform: uppercase;padding: 20px; margin-bottom: 50px;}
-.about-section h1{color:#A1C7C2}
-.about-section { padding: 50px;}
-.left-section img{border-radius: 40vh;
-    width: 80%;}
-    .home{text-align: center;}
+main {
+  background: #292c4b;
+  width: 1240px;
+  min-height: 900px;
+  margin: 15px auto;
+  border-radius: 20px;
+}
+.left-panel-navbar li {
+  padding: 40px 10px;
+}
+i.bi {
+  margin-right: 5px;
+}
+.nav-link {
+  transform: rotate(-90deg);
+  color: #fff;
+  font-size: 20px;
+  display: inline-flex;
+}
+.left-panel-navbar {
+    background: #3080ec;
+    color: #fff;
+    height: 100%;
+    border-radius: 0px 20px 20px 0;
+    width: 90px;
+}
+.right-panel {
+  background: #f6f7fa;
+  margin: 20px;
+  border-radius: 20px;
+  width: 87.5%;
+  height: 870px;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+.order-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-section .form-control {
+  padding-left: 40px;
+  background: url(/images/search-icon.png) no-repeat 10px center #fff;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  border-radius: 15px;
+}
+.loadmore button {
+  background: #f1743c;
+  color: #f6f7fa;
+  border: none;
+  border-radius: 15px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.loadmore button span {
+  margin-top: -15px;
+}
+.loadmore {
+  display: flex;
+  justify-content: flex-end;
+}
+.categories-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #f1743c;
+}
+.categories-section .category.active {
+  background: #edbca6;
+  font-size: 20px;
+}
+.categories-section .category {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #292c4b;
+}
+.right-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #292c4b;
+  margin: 0px 20px;
+  background: #fff;
+  width: 32%;
+}
+.card.product {
+  margin: 5px;
+  width: 23.5%;
+  padding: 10px;
+}
+.product-name {
+  color: #f1743c;
+  margin: 0;
+}
+.checkout-section .input-group {
+    position: relative;
+    display: flex;
+    width: 38%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.product-add-section {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #f1743c;
+    border-radius: 10px;
+    padding: 10px;
+    height: 60px;
+    box-shadow: 0px 2px 5px #F1743B;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.checkout-section i.bi.bi-x{
+    background: #f1743c;
+    color: #fff;
+    float: right;
+    margin-bottom: 20px;
+
+} 
+.product-display-section {
+    height: 38vh;
+    overflow: scroll;
+    margin-top: 20px;
+    width: 100%;
+}
+.checkout-section i.bi 
+{
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edbca6;
+    color: #292c4b;;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f1743c;
+    border-radius: 5px;
+}
+
+    .input-number.form-control{
+        width: 30px;
+        margin: 0 8px;
+        padding: 0;
+        border: none;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    .checkout-section  p.product-name {
+        line-height: 18px;
+    }
+    .checkout-button{
+         background: #f1743c;
+        border: none;
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    input.voucher.form-control {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .print-button{
+        background: #3080ec;
+        border: none;
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+    .Total-price p {
+        display: flex;
+        justify-content: space-between;
+    }
+    .Total-price {margin-top:30px;}
+
+    @media (min-width: 768px) and (max-width:1239px){
+       
+        .product-display-section {
+            height: 45vh;
+      }
+      main{width:1024px;min-height: 768px;}
+      main .row {
+       
+        margin: 0;
+    }
+    }
