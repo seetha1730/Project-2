@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const port = 3001
+const port = 3000
 const hbs = require("hbs");
 const path = require("path");
 
@@ -18,6 +18,9 @@ app.get("/setting", (req, res, next) =>{
 }) 
 app.get("/profile", (req, res, next) =>{
   res.render("profile")
+}) 
+app.get("/inventory", (req, res, next) =>{
+  res.render("inventory")
 }) 
 
 app.get("/layout", (req, res) => {
@@ -39,3 +42,4 @@ app.get("*", (req, res) => {
 app.listen(port, () => {
   console.log(`App running on port ${port}`)
 })
+

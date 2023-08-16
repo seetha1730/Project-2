@@ -19,25 +19,36 @@ main {
   min-height: 900px;
   margin: 15px auto;
   border-radius: 20px;
+  position:relative;
 }
 .left-panel-navbar li {
-  padding: 40px 10px;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #292c4b;
 }
 i.bi {
   margin-right: 5px;
+  
+}
+i.bi:before{
+    font-size: 30px;
 }
 .nav-link {
-  transform: rotate(-90deg);
+ 
   color: #fff;
-  font-size: 20px;
-  display: inline-flex;
+  font-size: 18px;
+  display: inline-block;
+    text-align: center;
 }
 .left-panel-navbar {
     background: #3080ec;
     color: #fff;
     height: 100%;
-    border-radius: 0px 20px 20px 0;
-    width: 90px;
+    width: 95px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
 }
 .right-panel {
   background: #f6f7fa;
@@ -212,6 +223,40 @@ i.bi {
         justify-content: space-between;
     }
     .Total-price {margin-top:30px;}
+    .setting-menu {
+      
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100px;
+      height: 900px;
+  }
+  .setting-menu button{
+    background: #292c4b;
+    color: #fff;
+    padding: 30px 15px;
+    text-decoration: none;
+    display: block;
+    
+    text-align: center;
+  }
+  .right-panel.setting
+{
+    padding: 0;
+    background: none;
+    height: 900px;
+    margin: 0;
+    
+}.setting-content{
+  background: #fff;
+  padding: 20px;
+  margin: 17px;
+}
+.panel { display: none; }
+.show { display: block; }
+
+
+
 
     @media (min-width: 768px) and (max-width:1239px){
        
