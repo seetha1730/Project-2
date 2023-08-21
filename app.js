@@ -22,16 +22,12 @@ app.get("/profile", (req, res, next) =>{
 app.get("/inventory", (req, res, next) =>{
   res.render("inventory")
 }) 
-
-app.get("/layout", (req, res) => {
-  res.render("layout")
-  
-  
-})
-
-
-  
-
+app.get("/category", (req, res, next) =>{
+  res.render("category")
+}) 
+app.get("/product", (req, res, next) =>{
+  res.render("product")
+}) 
 
 app.get("*", (req, res) => {
 
